@@ -191,35 +191,6 @@ a misty forest at dawn. She turns her head, eyes wide with wonder.
 tracks her movement as golden sunlight filters through the trees. 
 Warm tones, shallow depth of field, ethereal atmosphere.
 ```
-
-## 🎬 Video Generation Flow
-
-```mermaid
-graph TD
-    A[User Input] --> B{Input Type}
-    B -->|Text| C[Direct Story Text]
-    B -->|Audio| D[Transcribe with Gemini]
-    B -->|Image| E[OCR with Gemini Vision]
-    
-    C --> F[Analyze Story with Gemini]
-    D --> F
-    E --> F
-    
-    F --> G[Extract Characters]
-    F --> H[Break into Scenes]
-    
-    G --> I[User Reviews/Edits]
-    H --> I
-    
-    I --> J[Create Veo Prompt]
-    J --> K[Generate Video with Veo 3.1]
-    
-    K --> L[Poll for Completion]
-    L --> M{Video Ready?}
-    M -->|No| L
-    M -->|Yes| N[Download Video]
-```
-
 ## 🚧 Limitations
 
 ### Veo 3.1 Limitations
